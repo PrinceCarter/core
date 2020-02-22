@@ -130,6 +130,10 @@ libxslt_dep = dependency('libxslt')
 qrcodegen_dep = declare_dependency(compile_args: ['-I/usr/include/qrcodegen'],
   dependencies: cpp.find_library('qrcodegencpp'))
 
+qt5 = import('qt5')
+qt5_dep = dependency('qt5', modules: ['Core', 'Gui', 'Widgets'])
+qt5_x11_dep = dependency('qt5', modules: ['X11Extras'])
+
 # The version in Ubuntu eoan is too old.
 #mdds_dep = dependency('mdds-1.5')
 mdds_dep = declare_dependency(include_directories: 'mdds')

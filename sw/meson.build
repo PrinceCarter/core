@@ -1,4 +1,4 @@
-sw_lib = shared_library('sw',
+sw_lib = shared_library('swlo',
   'source/core/SwNumberTree/SwNodeNum.cxx',
   'source/core/SwNumberTree/SwNumberTree.cxx',
   'source/core/access/AccessibilityCheck.cxx',
@@ -734,7 +734,7 @@ sw_lib = shared_library('sw',
   dependencies: [icuuc_dep, libxml_dep],
 )
 
-swui_lib = shared_library('swui',
+swui_lib = shared_library('swuilo',
   'source/ui/chrdlg/break.cxx',
   'source/ui/chrdlg/chardlg.cxx',
   'source/ui/chrdlg/drpcps.cxx',
@@ -861,7 +861,7 @@ swui_lib = shared_library('swui',
 )
 
 
-msword_lib = shared_library('msword',
+msword_lib = shared_library('mswordlo',
   'source/filter/docx/swdocxreader.cxx',
   'source/filter/rtf/swparrtf.cxx',
   'source/filter/ww8/docxattributeoutput.cxx',
@@ -932,7 +932,7 @@ msword_lib = shared_library('msword',
   dependencies: [libxml_dep, icuuc_dep],
 )
 
-vbaswobj_lib = shared_library('vbaswobj',
+vbaswobj_lib = shared_library('vbaswobjlo',
   'source/ui/vba/service.cxx',
   'source/ui/vba/vbarange.cxx',
   'source/ui/vba/vbacell.cxx',

@@ -3,7 +3,7 @@ glxtest_lib = static_library('glxtest', 'unx/glxtest.cxx',
   dependencies: [x11_dep, dl_dep],
 )
 
-vcl_lib = shared_library('vcl',
+vcl_lib = shared_library('vcllo',
   'source/animate/Animation.cxx',
   'source/animate/AnimationBitmap.cxx',
   'source/window/aboutdialog.cxx',
@@ -461,8 +461,7 @@ vcl_lib = shared_library('vcl',
   ],
 )
 
-
-vclplug_gtk3 = shared_library('vclplug_gtk3',
+vclplug_gtk3 = shared_library('vclplug_gtk3lo',
   'unx/gtk3/a11y/gtk3atkaction.cxx',
   'unx/gtk3/a11y/gtk3atkbridge.cxx',
   'unx/gtk3/a11y/gtk3atkcomponent.cxx',

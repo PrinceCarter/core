@@ -1,4 +1,4 @@
-sd_lib = shared_library('sd',
+sd_lib = shared_library('sdlo',
   'source/core/CustomAnimationCloner.cxx',
   'source/core/CustomAnimationEffect.cxx',
   'source/core/CustomAnimationPreset.cxx',
@@ -406,7 +406,7 @@ sd_lib = shared_library('sd',
   dependencies: [libxml_dep],
 )
 
-sdui_lib = shared_library('sdui',
+sdui_lib = shared_library('sduilo',
   'source/filter/html/htmlattr.cxx',
   'source/filter/html/pubdlg.cxx',
   'source/ui/dlg/brkdlg.cxx',
@@ -466,7 +466,7 @@ sdui_lib = shared_library('sdui',
   dependencies: [],
 )
 
-sdfilt_lib = shared_library('sdfilt',
+sdfilt_lib = shared_library('sdfiltlo',
   'source/filter/eppt/eppt.cxx',
   'source/filter/eppt/epptso.cxx',
   'source/filter/eppt/escherex.cxx',

@@ -1,4 +1,4 @@
-sc_lib = shared_library('sc',
+sc_lib = shared_library('sclo',
   'source/core/data/attarray.cxx',
   'source/core/data/attrib.cxx',
   'source/core/data/autonamecache.cxx',
@@ -633,7 +633,7 @@ sc_lib = shared_library('sc',
   ], 
 )
 
-scui_lib = shared_library('scui',
+scui_lib = shared_library('scuilo',
   'source/ui/attrdlg/attrdlg.cxx',
   'source/ui/attrdlg/scdlgfact.cxx',
   'source/ui/attrdlg/scuiexp.cxx',
@@ -910,7 +910,7 @@ scui_lib = shared_library('scui',
 #  dependencies: [orcus_dep, broken_mdds_dep],
 #)
 
-vbaobj_lib = shared_library('vbaobj',
+vbaobj_lib = shared_library('vbaobjlo',
   'source/ui/vba/excelvbahelper.cxx',
   'source/ui/vba/service.cxx',
   'source/ui/vba/vbaapplication.cxx',

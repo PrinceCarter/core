@@ -7,5 +7,6 @@ salhelper_lib = shared_library('salhelperlo',
   include_directories: [main_inc],
   cpp_args: ['-DLIBO_INTERNAL_ONLY'],
   link_with: sal_lib,
-  )
+  install: true,
+)
 

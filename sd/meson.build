@@ -404,6 +404,7 @@ sd_lib = shared_library('sdlo',
     vcl_lib,
   ],
   dependencies: [libxml_dep],
+  install: true,
 )
 
 sdui_lib = shared_library('sduilo',
@@ -464,6 +465,7 @@ sdui_lib = shared_library('sduilo',
     vcl_lib,
   ],
   dependencies: [],
+  install: true,
 )
 
 sdfilt_lib = shared_library('sdfiltlo',
@@ -510,4 +512,5 @@ sdfilt_lib = shared_library('sdfiltlo',
     vcl_lib,
   ],
   dependencies: [],
+  install: true,
 )

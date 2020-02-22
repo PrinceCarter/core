@@ -134,6 +134,7 @@ sal_lib = shared_library('sallo',
     osx_frameworks_dep,
     dl_dep
   ],
+  install: true,
 )
 
 if cppunit_dep.found()

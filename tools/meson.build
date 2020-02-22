@@ -59,6 +59,7 @@ tl_lib = shared_library('tllo',
     sal_lib,
   ],
   dependencies: [libxml_dep, zlib_dep],
+  install: true,
 )
 
 bestreversemap_exe = executable('bestreversemap',

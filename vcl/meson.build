@@ -459,6 +459,7 @@ vcl_lib = shared_library('vcllo',
     x11_dep,
     xext_dep,
   ],
+  install : true,
 )
 
 vclplug_gtk3 = shared_library('vclplug_gtk3lo',
@@ -522,6 +523,7 @@ vclplug_gtk3 = shared_library('vclplug_gtk3lo',
     gtkprint_dep,
     x11_dep
   ],
+  install : true,
 )
 
 executable('svdem',

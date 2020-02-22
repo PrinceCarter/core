@@ -26,6 +26,7 @@ fwi_lib = shared_library('fwilo',
     utl_lib,
     vcl_lib,
   ],
+  install: true,
 )
 
 fwe_lib = shared_library('fwelo',
@@ -72,6 +73,7 @@ fwe_lib = shared_library('fwelo',
     utl_lib,
     vcl_lib,
   ],
+  install: true,
 )
 
 fwl_lib = shared_library('fwllo',
@@ -114,6 +116,7 @@ fwl_lib = shared_library('fwllo',
     utl_lib,
     vcl_lib,
   ],
+  install: true,
 )
 
 fwm_lib = shared_library('fwmlo',
@@ -133,6 +136,7 @@ fwm_lib = shared_library('fwmlo',
     vcl_lib,
     sal_lib,
   ],
+  install: true,
 )
 
 fwk_lib = shared_library('fwklo',
@@ -271,4 +275,5 @@ fwk_lib = shared_library('fwklo',
     utl_lib,
     vcl_lib,
   ],
+  install: true,
 )

@@ -37,4 +37,5 @@ lng_lib = shared_library('lnglo',
     xo_lib,
   ],
   dependencies: [icuuc_dep],
+  install: true,
 )

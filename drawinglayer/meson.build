@@ -153,5 +153,6 @@ drawinglayer_lib = shared_library('drawinglayerlo',
     sal_lib
   ],
   dependencies: [libxml_dep],
+  install: true,
 )
 

@@ -92,4 +92,5 @@ sb_lib = shared_library('sblo',
     vcl_lib,
     xmlscript_lib,
   ],
+  install: true,
 )

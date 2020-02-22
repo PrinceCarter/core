@@ -15,6 +15,7 @@ filterconfig_lib = shared_library('filterconfiglo',
   include_directories: [main_inc, udkh_inc, offapi_inc, 'inc', setup_inc],
   link_with: [fwe_lib, utl_lib, tl_lib, comphelper_lib, cppuhelper_lib, cppu_lib, salhelper_lib, sal_lib, i18nlangtag_lib],
   dependencies: [],
+  install: true,
 )
 
 # Requires too much custom target work. Fix later.
@@ -76,4 +77,5 @@ msfilter_lib = shared_library('msfilterlo',
     xo_lib,
   ],
   dependencies: [],
+  install: true,
 )

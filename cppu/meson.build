@@ -24,4 +24,5 @@ cppu_lib = shared_library('cppulo',
   cpp_args: ['-DLIBO_INTERNAL_ONLY',
              '-DCPPU_IMPLEMENTATION'],
   link_with: [salhelper_lib, sal_lib],
+  install: true,
 )

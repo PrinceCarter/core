@@ -163,5 +163,6 @@ cui_lib = shared_library('cuilo',
     vcl_lib,
   ],
   dependencies: [libxml_dep, icuuc_dep, qrcodegen_dep],
+  install: true,
 )
 

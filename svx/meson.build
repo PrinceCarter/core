@@ -409,6 +409,7 @@ svxcore_lib = shared_library('svxcorelo',
     xo_lib
   ],
   dependencies: [libxml_dep, icuuc_dep],
+  install: true,
 )
 
 svx_lib = shared_library('svxlo',
@@ -619,4 +620,5 @@ svx_lib = shared_library('svxlo',
     xo_lib,
   ],
   dependencies: [icuuc_dep],
+  install: true,
 )

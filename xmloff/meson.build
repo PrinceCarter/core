@@ -330,6 +330,7 @@ xo_lib = shared_library('xolo',
     utl_lib,
     vcl_lib,
   ],
+  install: true,
 )
 
 xof_lib = shared_library('xoflo',
@@ -384,4 +385,5 @@ xof_lib = shared_library('xoflo',
     sax_lib,
     xo_lib,
   ],
+  install: true,
 )

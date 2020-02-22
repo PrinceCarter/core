@@ -43,4 +43,5 @@ cppuhelper_lib = shared_library('cpphelperlo',
     unoidl_lib,
     xmlreader_lib
   ],
+  install: true,
 )

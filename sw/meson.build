@@ -732,6 +732,7 @@ sw_lib = shared_library('swlo',
     xo_lib
   ],
   dependencies: [icuuc_dep, libxml_dep],
+  install: true,
 )
 
 swui_lib = shared_library('swuilo',
@@ -858,8 +859,8 @@ swui_lib = shared_library('swuilo',
     vcl_lib,
   ],
   dependencies: [],
+  install: true,
 )
-
 
 msword_lib = shared_library('mswordlo',
   'source/filter/docx/swdocxreader.cxx',
@@ -930,6 +931,7 @@ msword_lib = shared_library('mswordlo',
     vcl_lib,
   ],
   dependencies: [libxml_dep, icuuc_dep],
+  install: true,
 )
 
 vbaswobj_lib = shared_library('vbaswobjlo',
@@ -1028,5 +1030,5 @@ vbaswobj_lib = shared_library('vbaswobjlo',
     vcl_lib
   ],
   dependencies: [libxml_dep],
-
+  install: true,
 )

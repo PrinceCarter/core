@@ -8,6 +8,7 @@ sax_lib = shared_library('saxlo',
              '-DLIBO_INTERNAL_ONLY'],
   include_directories: [main_inc, udkh_inc, offapi_inc],
   link_with: [sal_lib, tl_lib, comphelper_lib, cppuhelper_lib, cppu_lib, sal_lib],
+  install: true,
 )
 
 expwrap_lib = shared_library('expwraplo',
@@ -22,4 +23,5 @@ expwrap_lib = shared_library('expwraplo',
   include_directories: [main_inc, udkh_inc, offapi_inc, 'inc'],
   link_with: [comphelper_lib, cppuhelper_lib, cppu_lib, salhelper_lib, sal_lib, sax_lib, tl_lib],
   dependencies: [libxml_dep, expat_dep, zlib_dep],
+  install: true,
 )

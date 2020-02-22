@@ -35,4 +35,5 @@ cppcanvas_lib = shared_library('cppcanvaslo',
     tl_lib,
     vcl_lib,
   ],
+  install: true,
 )

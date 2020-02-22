@@ -99,4 +99,5 @@ dbtools_lib = shared_library('dbtoolslo',
     vcl_lib,
   ],
   dependencies: [],
+  install: true,
 )

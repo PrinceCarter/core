@@ -8,4 +8,5 @@ registry_lib = shared_library('reglo',
   include_directories: [main_inc, 'inc'],
   cpp_args: ['-DLIBO_INTERNAL_ONLY'],
   link_with: [store_lib, salhelper_lib, sal_lib],
+  install: true,
 )

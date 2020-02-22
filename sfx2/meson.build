@@ -273,4 +273,5 @@ sfx_lib = shared_library('sfxlo',
     libxml_dep,
     orcus_dep,
   ],
+  install: true,
 )

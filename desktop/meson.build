@@ -16,6 +16,7 @@ deploymentmisc_lib = shared_library('deploymentmisc',
   include_directories: [main_inc, udkh_inc, offapi_inc, 'inc', 'source/deployment/inc'],
   link_with: [comphelper_lib, cppuhelper_lib, cppu_lib, sal_lib, tl_lib, ucbhelper_lib, utl_lib, vcl_lib, xmlscript_lib, i18nlangtag_lib],
   dependencies: [],
+  install: true,
 )
 
 sofficeapp_lib = shared_library('sofficeapp',
@@ -43,5 +44,6 @@ sofficeapp_lib = shared_library('sofficeapp',
 soffice_bin = executable('soffice', 'source/app/main.c',
   include_directories: [main_inc],
   link_with: [sofficeapp_lib, sal_lib],
+  install: true,
 )
 

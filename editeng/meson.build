@@ -119,4 +119,5 @@ editeng_lib = shared_library('editenglo',
     xo_lib,
   ],
   dependencies: [libxml_dep, icuuc_dep],
+  install: true,
 )

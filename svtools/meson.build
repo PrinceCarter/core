@@ -136,4 +136,5 @@ svt_lib = shared_library('svtlo',
     utl_lib,
     vcl_lib,
   ],
+  install: true,
 )

@@ -95,4 +95,5 @@ svl_lib = shared_library('svllo',
     utl_lib,
   ],
   dependencies: [icuuc_dep, icu18_dep, libxml_dep, mdds_dep],
+  install: true,
 )

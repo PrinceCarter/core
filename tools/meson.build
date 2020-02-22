@@ -50,7 +50,14 @@ tl_lib = shared_library('tl',
   cpp_args: ['-DTOOLS_DLLIMPLEMENTATION',
              '-DLIBO_INTERNAL_ONLY'],
   include_directories: [main_inc, udkh_inc, offapi_inc, 'inc'],
-  link_with: [basegfx_lib, comphelper_lib, i18nlangtag_lib, cppu_lib, cppuhelper_lib, sal_lib],
+  link_with: [
+    basegfx_lib,
+    comphelper_lib,
+    cppu_lib,
+    cppuhelper_lib,
+    i18nlangtag_lib,
+    sal_lib,
+  ],
   dependencies: [libxml_dep, zlib_dep],
 )
 

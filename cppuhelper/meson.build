@@ -34,5 +34,13 @@ cppuhelper_lib = shared_library('cpphelper',
   udk_fake_h, off_fake_h, cppuhelper_fake_h,
   include_directories: [main_inc, udkh_inc, offapi_inc, cpphelper_uno_inc],
   cpp_args: ['-DCPPUHELPER_DLLIMPLEMENTATION', '-DLIBO_INTERNAL_ONLY'],
-  link_with: [temp_hack, cppu_lib, registry_lib, salhelper_lib, sal_lib, unoidl_lib, xmlreader_lib],
+  link_with: [
+    cppu_lib,
+    registry_lib,
+    sal_lib,
+    salhelper_lib,
+    temp_hack,
+    unoidl_lib,
+    xmlreader_lib
+  ],
 )

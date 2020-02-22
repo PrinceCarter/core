@@ -123,7 +123,6 @@ gio_dep = dependency('gio-2.0')
 xext_dep = dependency('xext')
 x11_dep = dependency('x11')
 fc_dep = dependency('fontconfig')
-cairo_dep = dependency('cairo')
 orcus_dep = dependency('liborcus-0.15')
 clucene_dep = dependency('libclucene-core')
 libxslt_dep = dependency('libxslt')
@@ -143,8 +142,8 @@ mdds_dep = dependency('mdds-1.5')
 
 # FIXME. Java does not provide .pc files.
 # Presumably this data can be obtained via other methods.
-jni_dep = declare_dependency(compile_args: ['-I/usr/lib/jvm/java-13-openjdk-amd64/include',
-                                            '-I/usr/lib/jvm/java-13-openjdk-amd64/include/linux'])
+jni_dep = declare_dependency(compile_args: ['-I/usr/lib/jvm/java-11-openjdk-amd64/include',
+                                            '-I/usr/lib/jvm/java-11-openjdk-amd64/include/linux'])
 
 subdir('config_host')
 subdir('sal')

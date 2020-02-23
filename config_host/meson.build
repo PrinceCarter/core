@@ -88,6 +88,8 @@ cdata.set_quoted('EXTRA_BUILDID', 'buildid')
 
 cdata.set10('ENABLE_FORMULA_LOGGER', true)
 
+cdata.set10('HAVE_FEATURE_SKIA', false)
+
 configure_file(input: 'config_typesizes.h.meson',
   output: 'config_typesizes.h',
   configuration: cdata)
@@ -202,4 +204,8 @@ configure_file(input: 'config_fuzzers.h.meson',
 
 configure_file(input: 'config_options_calc.h.meson',
   output: 'config_options_calc.h',
+  configuration: cdata)
+
+configure_file(input: 'config_skia.h.meson',
+  output: 'config_skia.h',
   configuration: cdata)

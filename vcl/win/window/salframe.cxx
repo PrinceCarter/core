@@ -1930,12 +1930,16 @@ static void ImplSalToTop( HWND hWnd, SalFrameToTop nFlags )
         // This magic code is necessary to connect the input focus of the
         // current window thread and the thread which owns the window that
         // should be the new foreground window.
+#if 0
         HWND   hCurrWnd     = GetForegroundWindow();
         DWORD  myThreadID   = GetCurrentThreadId();
         DWORD  currThreadID = GetWindowThreadProcessId(hCurrWnd,nullptr);
         AttachThreadInput(myThreadID, currThreadID,TRUE);
         SetForegroundWindow_Impl(hWnd);
         AttachThreadInput(myThreadID,currThreadID,FALSE);
+#else
+        SetForegroundWindow_Impl(hWnd);
+#endif
     }
 
     if ( nFlags & SalFrameToTop::RestoreWhenMin )
